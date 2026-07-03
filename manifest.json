@@ -1,10 +1,18 @@
 {
   "manifest_version": 3,
   "name": "MagnetFisher",
-  "version": "1.1",
-  "description": "Grab magnet links from all open tabs and copy to clipboard for qBittorrent",
-  "permissions": ["tabs", "scripting", "clipboardWrite"],
+  "version": "1.2",
+  "description": "Grab magnet links from all open tabs and send them straight to qBittorrent (or copy to clipboard)",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "clipboardWrite",
+    "storage",
+    "cookies",
+    "declarativeNetRequestWithHostAccess"
+  ],
   "host_permissions": ["<all_urls>"],
+  "options_page": "options.html",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
